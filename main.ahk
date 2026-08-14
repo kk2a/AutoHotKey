@@ -37,10 +37,10 @@ sc070::BackSpace
 ; ----------------------------------------------------------------------------
 
 ; Shift + 無変換 -> 英数へ一方向
-+sc07B::SendEvent("{vk1A}")  ; VK_IME_OFF
+sc07B & Shift::SendEvent("{vk1A}")  ; VK_IME_OFF
 
 ; Shift + 変換 -> かなへ一方向
-+sc079::SendEvent("{vk16}")  ; VK_IME_ON
+sc079 & Shift::SendEvent("{vk16}")  ; VK_IME_ON
 
 
 ; ----------------------------------------------------------------------------
